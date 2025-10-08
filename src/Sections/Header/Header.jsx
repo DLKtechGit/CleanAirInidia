@@ -8,7 +8,7 @@ import MobileMenu from "./mobileMenu/MobileMenu";
 
 //logo images
 import LogoImg1 from "../../assets/images/logo/logo.svg";
-import LogoImg2 from "../../assets/images/logo/logos.svg";
+import LogoImg2 from "../../assets/images/logo/Logos.svg";
 import LogoCorporateImg from "../../assets/images/logo/logos.svg";
 import LogoCryptoImg from "../../assets/images/logo/crypto-logo.svg";
 import LogoCrypto2Img from "../../assets/images/logo/crypto2-logo.svg";

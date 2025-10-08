@@ -64,7 +64,7 @@ const SayHello = () => {
     }
 
     try {
-      const response = await fetch('http://46.202.166.103:5000/api/contact', {
+      const response = await fetch('http://192.168.1.77:5000/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

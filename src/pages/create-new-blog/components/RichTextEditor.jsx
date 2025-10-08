@@ -112,7 +112,7 @@ const RichTextEditor = ({ content, onContentChange, onWordCountChange, uploadedI
 
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://46.202.166.103:5000/api/blogs/upload-image', {
+        const response = await fetch('http://192.168.1.77:5000/api/blogs/upload-image', {
           method: 'POST',
           headers: { Authorization: `Bearer ${token}` },
           body: formData

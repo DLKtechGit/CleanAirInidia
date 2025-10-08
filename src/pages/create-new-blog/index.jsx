@@ -64,7 +64,7 @@ const CreateNewBlog = () => {
   const fetchCategories = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://46.202.166.103:5000/api/categories', {
+      const response = await fetch('http://192.168.1.77:5000/api/categories', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -81,7 +81,7 @@ const CreateNewBlog = () => {
   const fetchTags = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://46.202.166.103:5000/api/tags', {
+      const response = await fetch('http://192.168.1.77:5000/api/tags', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -98,7 +98,7 @@ const CreateNewBlog = () => {
   const fetchBlogData = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://46.202.166.103:5000/api/blogs/${editBlogId}`, {
+      const response = await fetch(`http://192.168.1.77:5000/api/blogs/${editBlogId}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -185,8 +185,8 @@ const CreateNewBlog = () => {
     try {
       const token = localStorage.getItem('token');
       const url = isEditMode
-        ? `http://46.202.166.103:5000/api/blogs/${editBlogId}`
-        : 'http://46.202.166.103:5000/api/blogs';
+        ? `http://192.168.1.77:5000/api/blogs/${editBlogId}`
+        : 'http://192.168.1.77:5000/api/blogs';
 
       const formDataToSend = new FormData();
       formDataToSend.append('title', formData.title);
@@ -230,8 +230,8 @@ const CreateNewBlog = () => {
     try {
       const token = localStorage.getItem('token');
       const url = isEditMode
-        ? `http://46.202.166.103:5000/api/blogs/${editBlogId}`
-        : 'http://46.202.166.103:5000/api/blogs';
+        ? `http://192.168.1.77:5000/api/blogs/${editBlogId}`
+        : 'http://192.168.1.77:5000/api/blogs';
 
       const formDataToSend = new FormData();
       formDataToSend.append('title', formData.title);
