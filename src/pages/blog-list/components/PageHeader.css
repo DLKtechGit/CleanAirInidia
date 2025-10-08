@@ -1,0 +1,112 @@
+.page-header {
+    margin-top: 40px;
+    margin-bottom: 24px; /* mb-6 */
+}
+
+.page-header-container {
+    display: flex;
+    flex-direction: column; /* flex-col */
+    gap: 16px; /* space-y-4 */
+}
+
+@media (min-width: 640px) {
+    .page-header-container {
+        flex-direction: row; /* sm:flex-row */
+        align-items: center; /* sm:items-center */
+        justify-content: space-between; /* sm:justify-between */
+        gap: 0; /* sm:space-y-0 */
+    }
+}
+
+.page-header-content {
+    /* No specific styles, just structure */
+}
+
+.page-header-title {
+    font-size: 24px; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+    color: #000000; /* text-foreground */
+}
+
+.page-header-subtitle {
+    color: #6b7280; /* text-muted-foreground */
+    margin-top: 4px; /* mt-1 */
+}
+
+.page-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space-x-3 */
+}
+
+/* Stats Cards */
+.page-header-stats {
+    margin-top: 24px; /* mt-6 */
+    display: grid;
+    grid-template-columns: 1fr; /* grid-cols-1 */
+    gap: 16px; /* gap-4 */
+}
+
+@media (min-width: 640px) {
+    .page-header-stats {
+        grid-template-columns: repeat(3, 1fr); /* sm:grid-cols-3 */
+    }
+}
+
+.stat-card {
+    background-color: #ffffff; /* bg-card */
+    border: 1px solid #e5e7eb; /* border border-border */
+    border-radius: 8px; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* card-shadow */
+    padding: 16px; /* p-4 */
+}
+
+.stat-card-content {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space-x-3 */
+}
+
+.stat-icon-container {
+    padding: 8px; /* p-2 */
+    border-radius: 8px; /* rounded-lg */
+}
+
+.stat-icon-primary {
+    background-color: rgba(59, 130, 246, 0.1); /* bg-primary/10 */
+}
+
+.stat-icon-success {
+    background-color: rgba(16, 185, 129, 0.1); /* bg-success/10 */
+}
+
+.stat-icon-warning {
+    background-color: rgba(245, 158, 11, 0.1); /* bg-warning/10 */
+}
+
+.stat-icon {
+    color: #3b82f6; /* text-primary */
+}
+
+.stat-icon-success .stat-icon {
+    color: #10b981; /* text-success */
+}
+
+.stat-icon-warning .stat-icon {
+    color: #f59e0b; /* text-warning */
+}
+
+.stat-text {
+    /* No specific styles, just structure */
+}
+
+.stat-label {
+    font-size: 14px; /* text-sm */
+    color: #6b7280; /* text-muted-foreground */
+}
+
+.stat-value {
+    font-size: 20px; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: #000000; /* text-foreground */
+}

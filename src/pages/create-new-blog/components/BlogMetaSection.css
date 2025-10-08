@@ -1,0 +1,102 @@
+.blog-meta-section {
+    background-color: #ffffff; /* bg-card */
+    border: 1px solid #e5e7eb; /* border border-border */
+    border-radius: 8px; /* rounded-lg */
+    padding: 24px; /* p-6 */
+}
+
+.blog-meta-title {
+    font-size: 18px; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    color: #000000; /* text-foreground */
+    margin-bottom: 24px; /* mb-6 */
+}
+
+.blog-meta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* space-y-6 */
+}
+
+.blog-meta-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-meta-field-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* justify-between */
+    margin-bottom: 12px; /* mb-3 */
+}
+
+.blog-meta-label {
+    font-size: 14px; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #000000; /* text-foreground */
+}
+
+.image-upload-area {
+    border: 2px dashed #e5e7eb; /* border-2 border-dashed border-border */
+    border-radius: 8px; /* rounded-lg */
+    padding: 24px; /* p-6 */
+    text-align: center; /* text-center */
+    transition: border-color 0.2s; /* transition-colors */
+}
+
+.image-upload-area:hover {
+    border-color: #3b82f6; /* hover:border-primary */
+}
+
+.image-upload-icon {
+    margin: 0 auto 8px; /* mx-auto mb-2 */
+    color: #6b7280; /* text-muted-foreground */
+}
+
+.image-upload-text {
+    font-size: 14px; /* text-sm */
+    color: #6b7280; /* text-muted-foreground */
+    margin-bottom: 8px; /* mb-2 */
+}
+
+.image-upload-input {
+    display: none; /* hidden */
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed; /* fixed */
+    top: 0; /* inset-0 */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* bg-black bg-opacity-50 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* z-1000 */
+}
+
+.modal-content {
+    background-color: #ffffff; /* bg-card */
+    border-radius: 8px; /* rounded-lg */
+    padding: 24px; /* p-6 */
+    width: 384px; /* w-96 */
+    max-width: 90vw; /* max-w-90vw */
+}
+
+.modal-title {
+    font-size: 18px; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    margin-bottom: 16px; /* mb-4 */
+}
+
+.modal-input {
+    margin-bottom: 16px; /* mb-4 */
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end; /* justify-end */
+    gap: 12px; /* space-x-3 */
+}

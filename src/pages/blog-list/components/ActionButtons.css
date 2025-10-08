@@ -1,0 +1,44 @@
+.action-buttons-mobile {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space-x-2 */
+}
+
+.action-button-edit {
+    /* Default button styles are handled by Button component */
+}
+
+.action-button-delete {
+    color: #ef4444; /* text-error */
+}
+
+.action-button-delete:hover {
+    color: #ef4444; /* hover:text-error */
+}
+
+.action-buttons-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* justify-center */
+    gap: 4px; /* space-x-1 */
+}
+
+.action-button-icon-edit {
+    height: 32px; /* h-8 */
+    width: 32px; /* w-8 */
+}
+
+.action-button-icon-edit:hover {
+    background-color: rgba(59, 130, 246, 0.1); /* hover:bg-primary/10 */
+    color: #3b82f6; /* hover:text-primary */
+}
+
+.action-button-icon-delete {
+    height: 32px; /* h-8 */
+    width: 32px; /* w-8 */
+}
+
+.action-button-icon-delete:hover {
+    background-color: rgba(239, 68, 68, 0.1); /* hover:bg-error/10 */
+    color: #ef4444; /* hover:text-error */
+}

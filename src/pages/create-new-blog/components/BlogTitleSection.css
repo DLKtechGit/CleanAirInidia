@@ -1,0 +1,24 @@
+.blog-title-section {
+    background-color: #ffffff; /* bg-card */
+    border: 1px solid #e5e7eb; /* border border-border */
+    border-radius: 8px; /* rounded-lg */
+    padding: 24px; /* p-6 */
+    margin-bottom: 24px; /* mb-6 */
+}
+
+.blog-title-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* grid-cols-1 */
+    gap: 24px; /* gap-6 */
+}
+
+@media (min-width: 1024px) {
+    .blog-title-grid {
+        grid-template-columns: 1fr 1fr; /* lg:grid-cols-2 */
+    }
+}
+
+.blog-title-input,
+.blog-author-input {
+    width: 100%; /* w-full */
+}

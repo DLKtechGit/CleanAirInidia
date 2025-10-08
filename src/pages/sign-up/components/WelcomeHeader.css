@@ -1,0 +1,78 @@
+.welcome-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.welcome-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-logo {
+  width: 194px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); */
+  /* removed background-color so your logo's own colors show */
+  background-color: transparent;
+}
+
+.welcome-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.welcome-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000; /* foreground color */
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .welcome-title {
+    font-size: 30px;
+  }
+}
+
+.welcome-description {
+  color: #6b7280; /* muted-foreground color */
+  font-size: 14px;
+  max-width: 448px; /* max-w-md */
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .welcome-description {
+    font-size: 16px;
+  }
+}
+
+.welcome-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px; /* space-x-6 */
+  padding-top: 8px; /* pt-2 */
+}
+
+.welcome-feature {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space-x-2 */
+  font-size: 12px;
+  color: #6b7280; /* muted-foreground color */
+}

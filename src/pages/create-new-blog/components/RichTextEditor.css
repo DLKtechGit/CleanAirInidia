@@ -1,0 +1,206 @@
+.rich-text-editor {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 400px;
+}
+
+.editor-toolbar {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px;
+    background: #f9fafb;
+}
+
+.toolbar-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.toolbar-button {
+    padding: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.toolbar-button:hover {
+    background-color: #e5e7eb;
+}
+
+.toolbar-divider {
+    width: 1px;
+    height: 24px;
+    background-color: #e5e7eb;
+    margin: 0 8px;
+}
+
+.file-upload-label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.file-upload-input {
+    display: none;
+}
+
+.editor-content {
+    flex: 1;
+    min-height: 300px;
+    padding: 24px;
+    outline: none;
+    color: #000000;
+    line-height: 1.6;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.editor-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.editor-content:focus {
+    outline: none;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    width: 384px;
+    max-width: 90vw;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1f2937;
+}
+
+.modal-input {
+    margin-bottom: 16px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Uploaded Images Sidebar */
+.uploaded-images-sidebar {
+    border-top: 1px solid #e5e7eb;
+    padding: 16px;
+    background: #f9fafb;
+}
+
+.uploaded-images-sidebar h3 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.uploaded-images-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.preview-img-wrapper {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 4px;
+    background: white;
+}
+
+.preview-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.remove-img-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: background-color 0.2s;
+}
+
+.remove-img-btn:hover {
+    background: #dc2626;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .rich-text-editor {
+        min-height: 400px;
+    }
+    
+    .editor-content {
+        padding: 16px;
+        min-height: 250px;
+    }
+    
+    .toolbar-buttons {
+        gap: 4px;
+    }
+    
+    .uploaded-images-preview {
+        gap: 8px;
+    }
+    
+    .preview-img {
+        width: 60px;
+        height: 60px;
+    }
+}

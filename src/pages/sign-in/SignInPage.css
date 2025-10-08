@@ -1,0 +1,32 @@
+.signin-page-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px; /* gap-8 */
+    align-items: start; /* items-start */
+}
+
+@media (min-width: 1024px) {
+    .signin-page-grid {
+        grid-template-columns: 1fr 1fr; /* lg:grid-cols-2 */
+    }
+}
+
+.signin-form-column {
+    order: 2;
+}
+
+@media (min-width: 1024px) {
+    .signin-form-column {
+        order: 1; /* lg:order-1 */
+    }
+}
+
+.security-features-column {
+    order: 1;
+}
+
+@media (min-width: 1024px) {
+    .security-features-column {
+        order: 2; /* lg:order-2 */
+    }
+}

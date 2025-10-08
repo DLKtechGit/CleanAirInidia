@@ -1,0 +1,117 @@
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.signup-name-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .signup-name-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.password-field-container {
+  position: relative;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 12px;
+  top: 26px;
+  color: #6b7280;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.password-toggle-btn:hover {
+  color: #000000;
+}
+
+.password-requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.password-requirements-title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.password-requirements-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  font-size: 12px;
+}
+
+@media (min-width: 640px) {
+  .password-requirements-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.password-requirement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.requirement-met {
+  color: #16a34a; /* success color */
+}
+
+.requirement-unmet {
+  color: #6b7280; /* muted-foreground color */
+}
+
+.submit-error {
+  padding: 16px;
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 8px;
+}
+
+.error-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #dc2626; /* error color */
+}
+
+.error-message {
+  font-size: 14px;
+}
+
+.signin-link {
+  text-align: center;
+}
+
+.signin-text {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.signin-btn {
+  font-size: 14px;
+  color: #3b82f6; /* primary color */
+  background: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.signin-btn:hover {
+  color: rgba(59, 130, 246, 0.8);
+}

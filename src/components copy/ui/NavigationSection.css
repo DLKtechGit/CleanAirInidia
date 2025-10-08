@@ -1,0 +1,96 @@
+.navigation-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* space-y-1 */
+}
+
+.navigation-section-header {
+    width: 100%; /* w-full */
+    display: flex;
+    align-items: center; /* items-center */
+    padding: 12px 16px; /* px-4 py-3 */
+    text-align: left; /* text-left */
+    border-radius: 8px; /* rounded-lg */
+    transition: background-color 0.2s, color 0.2s; /* transition-smooth */
+    border: none;
+    cursor: pointer;
+}
+
+.navigation-section-header-active {
+    background-color: #f3f4f6; /* bg-muted */
+    color: #000000; /* text-foreground */
+}
+
+.navigation-section-header-inactive {
+    color: #000000; /* text-foreground */
+}
+
+.navigation-section-header-inactive:hover {
+    background-color: #f3f4f6; /* hover:bg-muted */
+    color: #000000; /* hover:text-foreground */
+}
+
+.navigation-section-icon {
+    flex-shrink: 0; /* flex-shrink-0 */
+}
+
+.navigation-section-icon-collapsed {
+    margin: 0 auto; /* mx-auto */
+}
+
+.navigation-section-icon-expanded {
+    margin-right: 12px; /* mr-3 */
+}
+
+.navigation-section-label {
+    font-weight: 500; /* font-medium */
+    font-size: 14px; /* text-sm */
+    flex: 1; /* flex-1 */
+}
+
+.navigation-section-chevron {
+    flex-shrink: 0; /* flex-shrink-0 */
+    transition: transform 150ms; /* transition-transform duration-150 */
+}
+
+.navigation-section-children {
+    margin-left: 8px; /* ml-2 */
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* space-y-1 */
+}
+
+.navigation-child-button {
+    width: 100%; /* w-full */
+    display: flex;
+    align-items: center; /* items-center */
+    padding: 8px 16px; /* px-4 py-2 */
+    text-align: left; /* text-left */
+    border-radius: 8px; /* rounded-lg */
+    transition: background-color 0.2s, color 0.2s; /* transition-smooth */
+    border: none;
+    cursor: pointer;
+}
+
+.navigation-child-button-active {
+    background-color: #3b82f6; /* bg-primary */
+    color: #ffffff; /* text-primary-foreground */
+}
+
+.navigation-child-button-inactive {
+    color: #6b7280; /* text-muted-foreground */
+}
+
+.navigation-child-button-inactive:hover {
+    background-color: #f3f4f6; /* hover:bg-muted */
+    color: #000000; /* hover:text-foreground */
+}
+
+.navigation-child-icon {
+    flex-shrink: 0; /* flex-shrink-0 */
+    margin-right: 12px; /* mr-3 */
+}
+
+.navigation-child-label {
+    font-size: 14px; /* text-sm */
+}

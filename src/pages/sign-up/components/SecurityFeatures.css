@@ -1,0 +1,83 @@
+.security-features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.security-features-header {
+    text-align: center;
+}
+
+.security-features-title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.security-features-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    color: #6b7280;
+}
+
+.security-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.security-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.security-feature-icon-container {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.security-feature-icon {
+    color: #3b82f6;
+}
+
+.security-feature-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.security-feature-title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.security-feature-description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #6b7280;
+}
+
+.security-features-footer {
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.security-features-ssl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #6b7280;
+}

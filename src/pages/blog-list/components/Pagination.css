@@ -1,0 +1,91 @@
+.pagination-container {
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+}
+
+.pagination-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .pagination-content {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination-text {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.pagination-select {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  background-color: var(--background);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.pagination-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring-color);
+  border-color: transparent;
+}
+
+.pagination-info {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.pagination-navigation {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pagination-pages {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pagination-ellipsis {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.pagination-page-btn {
+  min-width: 32px;
+}
+
+/* PageHeader.css */
+.clickable-stat {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clickable-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.clickable-stat:active {
+  transform: translateY(0);
+}

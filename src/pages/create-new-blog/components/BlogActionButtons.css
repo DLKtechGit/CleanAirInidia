@@ -1,0 +1,98 @@
+.blog-action-buttons {
+    background-color: #ffffff; /* bg-card */
+    border: 1px solid #e5e7eb; /* border border-border */
+    border-radius: 8px; /* rounded-lg */
+    padding: 24px; /* p-6 */
+}
+
+.blog-actions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* gap-4 */
+}
+
+@media (min-width: 640px) {
+    .blog-actions-container {
+        flex-direction: row; /* sm:flex-row */
+    }
+}
+
+.blog-primary-actions {
+    flex: 1; /* flex-1 */
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* gap-3 */
+}
+
+@media (min-width: 640px) {
+    .blog-primary-actions {
+        flex-direction: row; /* sm:flex-row */
+    }
+}
+
+.blog-action-button {
+    flex: 1; /* flex-1 */
+}
+
+.blog-secondary-actions {
+    display: flex;
+    gap: 12px; /* gap-3 */
+}
+
+.blog-action-button-secondary {
+    /* No additional styles needed as Button component handles it */
+}
+
+.blog-status-section {
+    margin-top: 16px; /* mt-4 */
+    padding-top: 16px; /* pt-4 */
+    border-top: 1px solid #e5e7eb; /* border-t border-border */
+}
+
+.blog-status-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* space-y-4 on mobile */
+    font-size: 14px; /* text-sm */
+}
+
+@media (min-width: 640px) {
+    .blog-status-container {
+        flex-direction: row; /* flex-row on larger screens */
+        justify-content: space-between; /* justify-between */
+        align-items: center;
+        gap: 0;
+    }
+}
+
+.blog-status-item {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* space-x-4 */
+}
+
+.blog-status-label {
+    color: #6b7280; /* text-muted-foreground */
+}
+
+.blog-status-value {
+    color: #f59e0b; /* text-warning */
+    font-weight: 500; /* font-medium */
+}
+
+.blog-status-container .blog-status-item:last-child .blog-status-value {
+    color: #000000; /* text-foreground */
+}
+
+.blog-help-section {
+    margin-top: 16px; /* mt-4 */
+    padding: 12px; /* p-3 */
+    background-color: #f3f4f6; /* bg-muted */
+    border-radius: 8px; /* rounded-lg */
+}
+
+.blog-help-text {
+    font-size: 12px; /* text-xs */
+    color: #6b7280; /* text-muted-foreground */
+    margin: 0;
+}

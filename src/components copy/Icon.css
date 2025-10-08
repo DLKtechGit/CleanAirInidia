@@ -1,0 +1,7 @@
+.icon-base {
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+/* You can add additional icon-specific styles if needed */

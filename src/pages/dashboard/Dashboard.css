@@ -1,0 +1,126 @@
+.dashboard-container {
+    min-height: 100vh;
+    background-color: #f8fafc;
+}
+
+.dashboard-main {
+    transition: all 0.2s ease-in-out;
+    padding-top: 64px;
+}
+
+.dashboard-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dashboard-welcome {
+    margin-bottom: 32px;
+}
+
+.dashboard-welcome-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 8px 0;
+}
+
+.dashboard-welcome-subtitle {
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Updated for 3-column grid */
+.metrics-grid-three {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .metrics-grid-three {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .metrics-grid-three {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.main-content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 1024px) {
+    .main-content-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.main-content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (min-width: 1024px) {
+    .main-content-left {
+        grid-column: span 2;
+    }
+}
+
+.main-content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dashboard-footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.dashboard-footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .dashboard-footer-content {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+.dashboard-footer-copyright {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.dashboard-footer-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.dashboard-footer-link {
+    font-size: 14px;
+    color: #6b7280;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.dashboard-footer-link:hover {
+    color: #000000;
+}
