@@ -27,7 +27,7 @@ const Dashboard = () => {
       const token = localStorage.getItem('token');
       
       // Fetch blog counts
-      const blogsResponse = await fetch('http://192.168.1.77:5000/api/blogs', {
+      const blogsResponse = await fetch('http://46.202.166.103:5000/api/blogs', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -38,7 +38,7 @@ const Dashboard = () => {
         const totalBlogs = blogsData.pagination?.total || 0;
         
         // Fetch published blogs count
-        const publishedResponse = await fetch('http://192.168.1.77:5000/api/blogs?status=published', {
+        const publishedResponse = await fetch('http://46.202.166.103:5000/api/blogs?status=published', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -48,7 +48,7 @@ const Dashboard = () => {
         const publishedCount = publishedData.pagination?.total || 0;
         
         // Fetch draft blogs count
-        const draftsResponse = await fetch('http://192.168.1.77:5000/api/blogs?status=draft', {
+        const draftsResponse = await fetch('http://46.202.166.103:5000/api/blogs?status=draft', {
           headers: {
             'Authorization': `Bearer ${token}`
           }

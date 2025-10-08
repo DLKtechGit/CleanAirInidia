@@ -62,7 +62,7 @@ const SignInForm = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://192.168.1.77:5000/api/signin', {
+      const response = await fetch('http://46.202.166.103:5000/api/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
