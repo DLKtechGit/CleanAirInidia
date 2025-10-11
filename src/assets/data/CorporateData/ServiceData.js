@@ -1,10 +1,10 @@
 // Import your images
-import serviceImg1 from '../../../assets/images/corporate/home1.jpg';
-import serviceImg2 from '../../../assets/images/corporate/home2.jpg';
-import serviceImg3 from '../../../assets/images/corporate/home3.jpg';
-import serviceImg4 from '../../../assets/images/corporate/home4.jpg';
-import serviceImg5 from '../../../assets/images/corporate/home5.jpg';
-import serviceImg6 from '../../../assets/images/corporate/home6.jpg';
+import serviceImg1 from '../../../assets/images/corporate/home11.jpg';
+import serviceImg2 from '../../../assets/images/corporate/home22.jpg';
+import serviceImg3 from '../../../assets/images/corporate/home33.jpg';
+import serviceImg4 from '../../../assets/images/corporate/home44.jpg';
+import serviceImg5 from '../../../assets/images/corporate/home55.jpg';
+import serviceImg6 from '../../../assets/images/corporate/home66.jpg';
 
 export const serviceData = [
     {

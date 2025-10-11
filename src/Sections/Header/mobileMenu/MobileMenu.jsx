@@ -3,7 +3,7 @@ import Data from "../../../assets/data/header/mobileMenu";
 import MobileMenuStyleWrapper from "./Menu.style";
 
 //logo images
-import LogoImg2 from "../../../assets/images/logo/logos.svg";
+import LogoImg2 from "../../../assets/images/logo/Logos.svg";
 
 const MobileMenu = () => {
   const [openSubMenuIndex, setOpenSubMenuIndex] = useState(null);

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import CorporateBannerStyle from "./CorporateBanner.style";
 import ScrollAnimate from "../../../Components/ScrollAnimate";
-import BgVideo from "../../../assets/images/videos/1080.mp4"; // <-- your mp4 here
+import BgVideo from "../../../assets/images/videos/10800.mp4"; // <-- your mp4 here
 
 const CorporateBanner = () => {
   return (

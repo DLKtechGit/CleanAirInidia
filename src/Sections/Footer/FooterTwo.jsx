@@ -5,7 +5,7 @@ import FooterSocialLinks from "../../assets/data/footer/footerSocialLinks";
 import Venobox from "venobox/dist/venobox";
 
 import FooterImg from "../../assets/images/footer/footer-2.png";
-import FooterLogo from "../../assets/images/logo/logos.svg";
+import FooterLogo from "../../assets/images/logo/Logos.svg";
 
 const FooterTwo = () => {
   useEffect(() => {
