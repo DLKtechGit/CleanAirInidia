@@ -9,41 +9,48 @@ import logoUdyam from "../../../assets/images/certificates/c2.png";
 import logoCE from "../../../assets/images/certificates/c3.jpg";
 import logoISO13485 from "../../../assets/images/certificates/c4.png";
 import logoISO9001 from "../../../assets/images/certificates/c4.png";
+import Laminarflow from "../../../assets/images/certificates/laminar-air-flow.png"
+import EN from "../../../assets/images/certificates/EN.jpg"
+import ud from "../../../assets/images/certificates/udyam.jpg"
+import CE from "../../../assets/images/certificates/CE.jpg"
+import ISO1 from "../../../assets/images/certificates/ISO1.jpg"
+import ISO2 from "../../../assets/images/certificates/ISO2.jpg"
+
 
 const certificates = [
   {
     name: "EN Certificate – Biosafety Cabinet",
     logo: logoISO9001,
     image:
-      "https://cleanairindia.com/assets/img/gallery/EN%20Certificate_BSC%20Final.jpg",
+      EN,
   },
   {
     name: "EN Certificate – Laminar Airflow",
     logo: logoISO13485,
-    image: "https://cleanairindia.com/assets/img/gallery/laminar-air-flow.png",
+    image: Laminarflow,
   },
   {
     name: "Udyam Registration",
     logo: logoCE,
-    image: "https://cleanairindia.com/assets/img/gallery/udyam%20registration.jpg",
+    image: ud,
   },
   {
     name: "CE Certificate",
     logo: logoUdyam,
     image:
-      "https://cleanairindia.com/assets/img/gallery/CE%20Certificate_New_page-0001.jpg",
+      CE,
   },
   {
     name: "ISO 13485",
     logo: logoLaminar,
     image:
-      "https://cleanairindia.com/assets/img/gallery/ISO%2013485%20Certificate_New_page-0001.jpg",
+      ISO1,
   },
   {
     name: "ISO 9001:2015",
     logo: logoLaminar,
     image:
-      "https://cleanairindia.com/assets/img/gallery/ISO%209001%202015%20Certificate%20-New_page-0001.jpg",
+      ISO2,
   },
 ];
 

@@ -50,42 +50,46 @@ const BestService = () => {
             <div className="col-lg-3 pr-0">
               <div className="best-services-left">
                 <ScrollAnimate delay={200}>
-                <SectionTitle
-                  title="We Provide"
-                  subtitle="Best Services"
-                  parentClass="corporate mb-2 md-mb-0"
-                  titleClass="mb-0"
-                />
+                  <SectionTitle
+                    title="We Provide"
+                    subtitle="Best Services"
+                    parentClass="corporate mb-2 md-mb-0"
+                    titleClass="mb-0"
+                  />
                 </ScrollAnimate>
                 <ScrollAnimate delay={250}>
-                <p>
-                  We specialize in innovative cleanroom solutions, delivering reliable equipment and services to meet critical industry standards
-                </p>
+                  <p>
+                    We specialize in innovative cleanroom solutions, delivering reliable equipment and services to meet critical industry standards
+                  </p>
                 </ScrollAnimate>
               </div>
             </div>
             <div className="col-lg-9">
               <ScrollAnimate delay={300}>
-              <div className="row corporate-services-slider">
-                <Slider {...sliderSettings}>
-                  {serviceData.map((service) => (
-                    <div key={service.id} className="col-md-12">
-                      <div className="best-services-card">
-                        <div className="best-services-img">
-                          <img
-                            src={service.imgSrc}
-                            alt={`service-img-${service.id}`}
-                          />
-                        </div>
-                        <div className="best-services-text">
-                          <h5 className="wt-700">{service.title}</h5>
-                          {/* <p>{service.description}</p> */}
+                <div className="row corporate-services-slider">
+                  <Slider {...sliderSettings}>
+                    {serviceData.map((service) => (
+                      <div key={service.id} className="col-md-12">
+                        <div className="best-services-card">
+                          <div className="best-services-img">
+                            <img
+                              src={service.imgSrc}
+                              alt={`service-img-${service.id}`}
+                            />
+                          </div>
+                          <div className="best-services-text">
+                            <h5
+                              className="wt-700"
+                              dangerouslySetInnerHTML={{ __html: service.title }}
+                            />
+
+                            {/* <p>{service.description}</p> */}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
-                </Slider>
-              </div>
+                    ))}
+                  </Slider>
+                </div>
               </ScrollAnimate>
             </div>
           </div>

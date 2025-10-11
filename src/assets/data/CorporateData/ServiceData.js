@@ -16,25 +16,25 @@ export const serviceData = [
     {
         id: 2,
         imgSrc: serviceImg2,
-        title: 'Modular cleanrooms, clean air tents, and softwall solutions',
+        title: `Modular cleanrooms, clean air tents, and softwall solutions<br/><br/>`,
         description: 'We use as filler text for layouts, non-readability is of great importance',
     },
     {
         id: 3,
         imgSrc: serviceImg3,
-        title: 'Biosafety cabinets and laminar airflow systems',
+        title: 'Biosafety cabinets and laminar airflow systems<br/>',
         description: 'Because those who do not know how to pursue we use as filler text for layouts',
     },
     {
         id: 4,
         imgSrc: serviceImg4,
-        title: 'Fume hoods and laboratory furniture',
+        title: 'Fume hoods and laboratory furniture<br/><br/>',
         description: 'I must explain to you how all this mistaken. Idea of main denouncing pleasure',
     },
     {
         id: 5,
         imgSrc: serviceImg5,
-        title: 'HVAC design and air distribution systems',
+        title: 'HVAC design and air distribution systems<br/>',
         description: 'We use as filler text for layouts, non-readability is of great importance',
     },
     {
