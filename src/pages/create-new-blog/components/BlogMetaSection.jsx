@@ -27,7 +27,7 @@ const BlogMetaSection = ({
     if (newCategoryName?.trim()) {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://192.168.1.77:5000/api/categories', {
+        const response = await fetch('https://api.cleanairindia.com/api/categories', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const BlogMetaSection = ({
     if (newTagName?.trim()) {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://192.168.1.77:5000/api/tags', {
+        const response = await fetch('https://api.cleanairindia.com/api/tags', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

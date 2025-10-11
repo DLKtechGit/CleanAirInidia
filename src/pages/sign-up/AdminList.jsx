@@ -24,7 +24,7 @@ const AdminList = () => {
     try {
       setLoading(true);
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://192.168.1.77:5000/api/users`, {
+      const response = await fetch(`https://api.cleanairindia.com/api/users`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
 

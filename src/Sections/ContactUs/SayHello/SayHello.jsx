@@ -64,7 +64,7 @@ const SayHello = () => {
     }
 
     try {
-      const response = await fetch('http://192.168.1.77:5000/api/contact', {
+      const response = await fetch('https://api.cleanairindia.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -243,7 +243,7 @@ const SayHello = () => {
                       ></textarea>
                     </div>
                     <div className="form-input mb-30 recaptcha-container">
-                      <div className="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                      <div className="g-recaptcha" data-sitekey="6Ld-nWQjAAAAAPoruQKdSsp3u9qe4zNRTgTqiFkP"></div>
                     </div>
                     
                     {submitMessage && (
